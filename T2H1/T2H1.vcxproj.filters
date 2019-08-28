@@ -1,0 +1,519 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="sdk">
+      <UniqueIdentifier>{cf9485f9-041c-4fde-ab4d-8be09997e5cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\Interfaces">
+      <UniqueIdentifier>{3e0ef81a-8c9e-4d29-ac84-092238a24cfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\ValveGen">
+      <UniqueIdentifier>{778941eb-05d6-4461-9aaf-63f3ec93f789}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\Classes">
+      <UniqueIdentifier>{b2f57284-93d3-4df2-94fd-67c15f9b1c89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\Utils">
+      <UniqueIdentifier>{dfd089a8-bafc-4ec1-a766-7c5cecfb1250}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\Math">
+      <UniqueIdentifier>{09a25cb7-8637-449f-941c-edea854c0ee8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CKeyEvents.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hook.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Offsets.h">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="IBaseClientDLL.h">
+      <Filter>sdk\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IClientEntityList.h">
+      <Filter>sdk\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IVEngineClient.h">
+      <Filter>sdk\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IConVar.h">
+      <Filter>sdk\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IClientMode.h">
+      <Filter>sdk\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="ICvar.h">
+      <Filter>sdk\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IAppSystem.h">
+      <Filter>sdk\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CAI_BaseNPC.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CAmbientGeneric.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CBaseAnimating.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CBaseAnimatingOverlay.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CBaseBeam.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CBaseButton.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CBaseCombatCharacter.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CBaseCombatWeapon.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CBaseEntity.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CBaseGrenade.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CBaseParticleEntity.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CBaseTempEntity.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CBaseToggle.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CBaseTrigger.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CBaseViewModel.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CBaseVPhysicsTrigger.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CBeam.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CBeamSpotlight.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CBoneFollower.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CBreakableProp.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CBreakableSurface.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CCascadeLight.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CColorCorrection.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CCrossbowBolt.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CDynamicLight.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CDynamicProp.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CDynamicPropLightweight.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CEntityBlocker.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CEntityDissolve.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CEnvTonemapController.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CEnvWind.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CFirstPersonProxy.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CFogController.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CFuncBrush.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CFuncBrushLightweight.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CFuncMoveLinear.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CGameRulesProxy.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CGlobalNonRewinding.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CGrappleHook.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CHardPointEntity.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CHardPointFrontierEntity.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CHealthKit.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CInfoPlacementHelper.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CInfoTarget.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CInfoTargetMinimap.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CMissile.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CMovieDisplay.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CNPC_Drone.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CNPC_Dropship.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CNPC_SentryTurret.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CNPC_Titan.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CParticleSystem.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CPhysBox.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CPhysicsProp.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CPlayer.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CPlayerDecoy.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CPlayerResource.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CPointCamera.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CPortalPointPush.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CPostProcessController.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CPredictedFirstPersonProxy.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CProjectile.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CRopeKeyframe.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CScriptMover.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CScriptMoverLightweight.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CScriptNetData.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CScriptNetData_SNDC_GLOBAL.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CScriptNetData_SNDC_PLAYER_EXCLUSIVE.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CScriptNetData_SNDC_PLAYER_GLOBAL.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CScriptNetData_SNDC_TITAN_SOUL.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CScriptNetDataGlobal.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CScriptProp.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CScriptTraceVolume.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CSnapshotCanary.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CSnapshotCanaryA.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CSnapshotCanaryB.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CSpotlightEnd.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CSprite.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CSpriteOriented.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CStatueProp.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CStatusEffectPlugin.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CTeam.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CTEBeamEntPoint.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CTEBeamEnts.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CTEBeamFollow.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CTEBeamLaser.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CTEBeamPoints.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CTEBeamRing.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CTEBeamRingPoint.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CTEBeamSpline.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CTEBreakModel.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CTEEffectDispatch.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CTEExplosion.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CTEGibEvent.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CTEParticleSystem.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CTEPhysicsProp.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CTEProjectileTrail.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CTEScriptParticleSystem.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CTEScriptParticleSystemOnEntity.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CTEScriptParticleSystemOnEntityWithPos.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CTEShatterSurface.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CTESoundDispatch.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CTitan_Cockpit.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CTitanSoul.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CTriggerNoGrapple.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CTriggerPlayerMovement.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CTriggerPointGravity.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CTurret.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CVGuiScreen.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CVortexSphere.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CWaterLODControl.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CWeaponX.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\CWorld.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveGen\GeneratedSDK.h">
+      <Filter>sdk\ValveGen</Filter>
+    </ClInclude>
+    <ClInclude Include="C_BaseEntity.h">
+      <Filter>sdk\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C_GlobalVars.h">
+      <Filter>sdk\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C_Input.h">
+      <Filter>sdk\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C_UserCmd.h">
+      <Filter>sdk\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C_Vec.h">
+      <Filter>sdk\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientClass.h">
+      <Filter>sdk\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="ConVar.h">
+      <Filter>sdk\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="ConVar.cpp">
+      <Filter>sdk\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="UtlBuffer.hpp">
+      <Filter>sdk\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="UtlMemory.hpp">
+      <Filter>sdk\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="UtlString.hpp">
+      <Filter>sdk\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="UtlVector.hpp">
+      <Filter>sdk\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>sdk\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="characterset.h">
+      <Filter>sdk\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="platform.hpp">
+      <Filter>sdk\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="QAngle.h">
+      <Filter>sdk\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2D.h">
+      <Filter>sdk\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector4D.h">
+      <Filter>sdk\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="VMatrix.h">
+      <Filter>sdk\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector.h">
+      <Filter>sdk\Math</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hook.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UtlBuffer.cpp">
+      <Filter>sdk\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="UtlString.cpp">
+      <Filter>sdk\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Color.cpp">
+      <Filter>sdk\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="characterset.cpp">
+      <Filter>sdk\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2D.cpp">
+      <Filter>sdk\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector4D.cpp">
+      <Filter>sdk\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="VMatrix.cpp">
+      <Filter>sdk\Math</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

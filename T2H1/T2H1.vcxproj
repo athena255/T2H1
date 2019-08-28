@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{D703E72D-D899-4FC8-9741-2B39CEE8E494}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>T2H1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;T2H1_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;T2H1_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;T2H1_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;T2H1_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="characterset.h" />
+    <ClInclude Include="CInterface.h" />
+    <ClInclude Include="CKeyEvents.h" />
+    <ClInclude Include="ClientClass.h" />
+    <ClInclude Include="Color.h" />
+    <ClInclude Include="ConVar.cpp" />
+    <ClInclude Include="ConVar.h" />
+    <ClInclude Include="C_BaseEntity.h" />
+    <ClInclude Include="C_GlobalVars.h" />
+    <ClInclude Include="C_Input.h" />
+    <ClInclude Include="C_UserCmd.h" />
+    <ClInclude Include="C_Vec.h" />
+    <ClInclude Include="hook.h" />
+    <ClInclude Include="IAppSystem.h" />
+    <ClInclude Include="IBaseClientDLL.h" />
+    <ClInclude Include="IClientEntityList.h" />
+    <ClInclude Include="IClientMode.h" />
+    <ClInclude Include="IConVar.h" />
+    <ClInclude Include="ICvar.h" />
+    <ClInclude Include="IVEngineClient.h" />
+    <ClInclude Include="Offsets.h" />
+    <ClInclude Include="platform.hpp" />
+    <ClInclude Include="QAngle.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="utils.h" />
+    <ClInclude Include="UtlBuffer.hpp" />
+    <ClInclude Include="UtlMemory.hpp" />
+    <ClInclude Include="UtlString.hpp" />
+    <ClInclude Include="UtlVector.hpp" />
+    <ClInclude Include="ValveGen\CAI_BaseNPC.h" />
+    <ClInclude Include="ValveGen\CAmbientGeneric.h" />
+    <ClInclude Include="ValveGen\CBaseAnimating.h" />
+    <ClInclude Include="ValveGen\CBaseAnimatingOverlay.h" />
+    <ClInclude Include="ValveGen\CBaseBeam.h" />
+    <ClInclude Include="ValveGen\CBaseButton.h" />
+    <ClInclude Include="ValveGen\CBaseCombatCharacter.h" />
+    <ClInclude Include="ValveGen\CBaseCombatWeapon.h" />
+    <ClInclude Include="ValveGen\CBaseEntity.h" />
+    <ClInclude Include="ValveGen\CBaseGrenade.h" />
+    <ClInclude Include="ValveGen\CBaseParticleEntity.h" />
+    <ClInclude Include="ValveGen\CBaseTempEntity.h" />
+    <ClInclude Include="ValveGen\CBaseToggle.h" />
+    <ClInclude Include="ValveGen\CBaseTrigger.h" />
+    <ClInclude Include="ValveGen\CBaseViewModel.h" />
+    <ClInclude Include="ValveGen\CBaseVPhysicsTrigger.h" />
+    <ClInclude Include="ValveGen\CBeam.h" />
+    <ClInclude Include="ValveGen\CBeamSpotlight.h" />
+    <ClInclude Include="ValveGen\CBoneFollower.h" />
+    <ClInclude Include="ValveGen\CBreakableProp.h" />
+    <ClInclude Include="ValveGen\CBreakableSurface.h" />
+    <ClInclude Include="ValveGen\CCascadeLight.h" />
+    <ClInclude Include="ValveGen\CColorCorrection.h" />
+    <ClInclude Include="ValveGen\CCrossbowBolt.h" />
+    <ClInclude Include="ValveGen\CDynamicLight.h" />
+    <ClInclude Include="ValveGen\CDynamicProp.h" />
+    <ClInclude Include="ValveGen\CDynamicPropLightweight.h" />
+    <ClInclude Include="ValveGen\CEntityBlocker.h" />
+    <ClInclude Include="ValveGen\CEntityDissolve.h" />
+    <ClInclude Include="ValveGen\CEnvTonemapController.h" />
+    <ClInclude Include="ValveGen\CEnvWind.h" />
+    <ClInclude Include="ValveGen\CFirstPersonProxy.h" />
+    <ClInclude Include="ValveGen\CFogController.h" />
+    <ClInclude Include="ValveGen\CFuncBrush.h" />
+    <ClInclude Include="ValveGen\CFuncBrushLightweight.h" />
+    <ClInclude Include="ValveGen\CFuncMoveLinear.h" />
+    <ClInclude Include="ValveGen\CGameRulesProxy.h" />
+    <ClInclude Include="ValveGen\CGlobalNonRewinding.h" />
+    <ClInclude Include="ValveGen\CGrappleHook.h" />
+    <ClInclude Include="ValveGen\CHardPointEntity.h" />
+    <ClInclude Include="ValveGen\CHardPointFrontierEntity.h" />
+    <ClInclude Include="ValveGen\CHealthKit.h" />
+    <ClInclude Include="ValveGen\CInfoPlacementHelper.h" />
+    <ClInclude Include="ValveGen\CInfoTarget.h" />
+    <ClInclude Include="ValveGen\CInfoTargetMinimap.h" />
+    <ClInclude Include="ValveGen\CMissile.h" />
+    <ClInclude Include="ValveGen\CMovieDisplay.h" />
+    <ClInclude Include="ValveGen\CNPC_Drone.h" />
+    <ClInclude Include="ValveGen\CNPC_Dropship.h" />
+    <ClInclude Include="ValveGen\CNPC_SentryTurret.h" />
+    <ClInclude Include="ValveGen\CNPC_Titan.h" />
+    <ClInclude Include="ValveGen\CParticleSystem.h" />
+    <ClInclude Include="ValveGen\CPhysBox.h" />
+    <ClInclude Include="ValveGen\CPhysicsProp.h" />
+    <ClInclude Include="ValveGen\CPlayer.h" />
+    <ClInclude Include="ValveGen\CPlayerDecoy.h" />
+    <ClInclude Include="ValveGen\CPlayerResource.h" />
+    <ClInclude Include="ValveGen\CPointCamera.h" />
+    <ClInclude Include="ValveGen\CPortalPointPush.h" />
+    <ClInclude Include="ValveGen\CPostProcessController.h" />
+    <ClInclude Include="ValveGen\CPredictedFirstPersonProxy.h" />
+    <ClInclude Include="ValveGen\CProjectile.h" />
+    <ClInclude Include="ValveGen\CRopeKeyframe.h" />
+    <ClInclude Include="ValveGen\CScriptMover.h" />
+    <ClInclude Include="ValveGen\CScriptMoverLightweight.h" />
+    <ClInclude Include="ValveGen\CScriptNetData.h" />
+    <ClInclude Include="ValveGen\CScriptNetDataGlobal.h" />
+    <ClInclude Include="ValveGen\CScriptNetData_SNDC_GLOBAL.h" />
+    <ClInclude Include="ValveGen\CScriptNetData_SNDC_PLAYER_EXCLUSIVE.h" />
+    <ClInclude Include="ValveGen\CScriptNetData_SNDC_PLAYER_GLOBAL.h" />
+    <ClInclude Include="ValveGen\CScriptNetData_SNDC_TITAN_SOUL.h" />
+    <ClInclude Include="ValveGen\CScriptProp.h" />
+    <ClInclude Include="ValveGen\CScriptTraceVolume.h" />
+    <ClInclude Include="ValveGen\CSnapshotCanary.h" />
+    <ClInclude Include="ValveGen\CSnapshotCanaryA.h" />
+    <ClInclude Include="ValveGen\CSnapshotCanaryB.h" />
+    <ClInclude Include="ValveGen\CSpotlightEnd.h" />
+    <ClInclude Include="ValveGen\CSprite.h" />
+    <ClInclude Include="ValveGen\CSpriteOriented.h" />
+    <ClInclude Include="ValveGen\CStatueProp.h" />
+    <ClInclude Include="ValveGen\CStatusEffectPlugin.h" />
+    <ClInclude Include="ValveGen\CTeam.h" />
+    <ClInclude Include="ValveGen\CTEBeamEntPoint.h" />
+    <ClInclude Include="ValveGen\CTEBeamEnts.h" />
+    <ClInclude Include="ValveGen\CTEBeamFollow.h" />
+    <ClInclude Include="ValveGen\CTEBeamLaser.h" />
+    <ClInclude Include="ValveGen\CTEBeamPoints.h" />
+    <ClInclude Include="ValveGen\CTEBeamRing.h" />
+    <ClInclude Include="ValveGen\CTEBeamRingPoint.h" />
+    <ClInclude Include="ValveGen\CTEBeamSpline.h" />
+    <ClInclude Include="ValveGen\CTEBreakModel.h" />
+    <ClInclude Include="ValveGen\CTEEffectDispatch.h" />
+    <ClInclude Include="ValveGen\CTEExplosion.h" />
+    <ClInclude Include="ValveGen\CTEGibEvent.h" />
+    <ClInclude Include="ValveGen\CTEParticleSystem.h" />
+    <ClInclude Include="ValveGen\CTEPhysicsProp.h" />
+    <ClInclude Include="ValveGen\CTEProjectileTrail.h" />
+    <ClInclude Include="ValveGen\CTEScriptParticleSystem.h" />
+    <ClInclude Include="ValveGen\CTEScriptParticleSystemOnEntity.h" />
+    <ClInclude Include="ValveGen\CTEScriptParticleSystemOnEntityWithPos.h" />
+    <ClInclude Include="ValveGen\CTEShatterSurface.h" />
+    <ClInclude Include="ValveGen\CTESoundDispatch.h" />
+    <ClInclude Include="ValveGen\CTitanSoul.h" />
+    <ClInclude Include="ValveGen\CTitan_Cockpit.h" />
+    <ClInclude Include="ValveGen\CTriggerNoGrapple.h" />
+    <ClInclude Include="ValveGen\CTriggerPlayerMovement.h" />
+    <ClInclude Include="ValveGen\CTriggerPointGravity.h" />
+    <ClInclude Include="ValveGen\CTurret.h" />
+    <ClInclude Include="ValveGen\CVGuiScreen.h" />
+    <ClInclude Include="ValveGen\CVortexSphere.h" />
+    <ClInclude Include="ValveGen\CWaterLODControl.h" />
+    <ClInclude Include="ValveGen\CWeaponX.h" />
+    <ClInclude Include="ValveGen\CWorld.h" />
+    <ClInclude Include="ValveGen\GeneratedSDK.h" />
+    <ClInclude Include="Vector.h" />
+    <ClInclude Include="Vector2D.h" />
+    <ClInclude Include="Vector4D.h" />
+    <ClInclude Include="VMatrix.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="characterset.cpp" />
+    <ClCompile Include="CInterface.cpp" />
+    <ClCompile Include="Color.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="hook.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="utils.cpp" />
+    <ClCompile Include="UtlBuffer.cpp" />
+    <ClCompile Include="UtlString.cpp" />
+    <ClCompile Include="Vector2D.cpp" />
+    <ClCompile Include="Vector4D.cpp" />
+    <ClCompile Include="VMatrix.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
